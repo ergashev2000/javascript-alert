@@ -13,9 +13,10 @@ document.querySelector(".result2").innerHTML = sum;
 if(allSum > sum){
     var words = document.querySelector(".result3");
     words.textContent = "Alisher, ozgina sabr qilish kerak bo’lar ekan.";
+
+    var words = document.querySelector( ".alert" );
+    words.style.opacity = "1";
     document.querySelector(".result5").innerHTML = allSum - sum;
-    var dis = document.getElementsByClassName("alert");
-    dis.style.displey = "block";
 }else{
     var words = document.querySelector(".result4");
     words.textContent = "Oq yo’l, Alisher!";
